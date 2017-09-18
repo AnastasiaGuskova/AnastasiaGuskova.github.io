@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Les10HW_JQueryMenu</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<ul class="wrapper">
+			<li><a href="#">Nav1</a></li>
+			<li><a href="#">Nav2</a></li>
+			<li class="dropdown arrow-down">
+				<a href="#">Nav3</a>
+				<ul class="submenu">
+					<li><a href="#">Nav3.1</a></li>
+					<li><a href="#">Nav3.2</a></li>
+					<li><a href="#">Nav3.3</a></li>
+					<li><a href="#">Nav3.4</a></li>
+					<li class="dropdown arrow-right">
+						<a href="#">Nav3.5</a>
+						<ul class="submenu double-submenu">
+							<li><a href="#">Nav3.5.1</a></li>
+							<li class="dropdown arrow-right">
+								<a href="#">Nav3.5.2</a>
+								<ul class="submenu double-submenu">
+									<li><a href="#">Nav3.5.2.1</a></li>
+									<li><a href="#">Nav3.5.2.2</a></li>
+									<li><a href="#">Nav3.5.2.3</a></li>
+									<li><a href="#">Nav3.5.2.4</a></li>
+								</ul>		
+							</li>
+							<li><a href="#">Nav3.5.3</a></li>
+							<li><a href="#">Nav3.5.4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nav3.6</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Nav4</a></li>
+			<li><a href="#">Nav5</a></li>
+		</ul>
+	</nav>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+ 		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ 		crossorigin="anonymous">	
+ 	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
