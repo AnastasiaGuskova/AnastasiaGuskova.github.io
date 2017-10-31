@@ -6,7 +6,6 @@
 
 body {
 	font-family: Arial, Tahoma, sans-serif;
-	height: 300px;
 }
 
 .wrapper {
@@ -23,7 +22,7 @@ nav {
 	background-color: #FF6464;
 }
 
-nav ul {
+.main-menu {
 	height: 60px;
 }
 
@@ -54,17 +53,13 @@ nav ul li a {
 	text-decoration: none;
 }
 
-nav ul .submenu-wrapper .submenu {
-	/* height:  */
-	overflow: hidden;
-}
-
 nav ul .submenu {
 	position: absolute;
 	top: 50px;
 	left: 0;
 	height: auto;
 	display: none;
+	overflow: hidden;
 }
 
 nav ul .submenu li {

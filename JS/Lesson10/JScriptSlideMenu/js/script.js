@@ -1,7 +1,7 @@
 (function() {
 	var dropDown = document.querySelectorAll('.dropdown');
 
-	for(var i=0; i < dropDown.length; i++ ) {
+	for(var i = 0; i < dropDown.length; i++ ) {
 		var submenu;
 		dropDown[i].addEventListener('mouseenter', function() {
 			submenu = this.querySelectorAll('.submenu');
@@ -14,30 +14,34 @@
 	}
 
 	var time = 0;
+	var height;
+	var maxHeight;
 
 	function showElem(elem) {
 		elem.classList.add('show-block-elem');
-		var heigt = 0;
-		var timer = setInterval(function() {
+		height = 0;
+		maxHeight = parseInt(window.getComputedStyle(elem, null).height);
+		console.log(maxHeight);
+		var showTimer = setInterval(function() {
 			if (time == 1000) {
-				clearInterval(timer);
-				console.log('clearInterval');
+				clearInterval(showTimer);
 			}
-			var op = (opacityValue + 0.01) + '';
-			elem.style.opacity = op;
+			elem.style.height = height + 'px';
+			height += maxHeight/100;
+			console.log(elem.style.height);
 			time += 10;
 		}, 10);
 
 	}
 
 	function hideElem(elem) {
-		var opacityValue = 1;
-		var timer = setInterval(function() {
+		console.log('mouseleave');
+		var hideTimer = setInterval(function() {
 			if (time == 0) {
-				clearInterval(timer);
+				clearInterval(hideTimer);
 			}
-			var op = (opacityValue - 0.01) + '';
-			elem.style.opacity = op;
+			height -= maxHeight/100;
+			elem.style.height = height + 'px';
 			time -= 10;
 		}, 10);
 	}
