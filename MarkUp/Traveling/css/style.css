@@ -1,0 +1,67 @@
+/* GENERAL */
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ body {
+ 	background-image: url("../img/main-bg.jpg");
+ 	font-family: 'Pathway Gothic One', Arial, sans-serif;
+ }
+
+ ul, nav {
+ 	list-style: none;
+ }
+
+ a {
+ 	text-decoration: none;
+ 	cursor: pointer;
+ 	color: inherit;
+ }
+
+ .content-wrapper {
+ 	width: 1024px;
+ }
+
+/* HEADER */
+.main-menu {
+	width: 828px;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px auto;
+}
+
+.main-menu li {
+	display: inline-flex;
+}
+
+.main-menu li a {
+	height: auto;
+	align-items: flex-start;
+	color: #fff;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+.main-menu li:hover a {
+	color: #263555;
+}
+ 
+.main-menu .submenu {
+	display: none;
+}
+
+.main-logo {
+	width: 140px;
+	display: flex;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.main-logo h1 {
+	justify-content: center;
+	align-items: center;
+	color: #263555;
+	font: 60px/140px Dorsa, sans-serif;
+}
