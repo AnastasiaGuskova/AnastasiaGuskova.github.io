@@ -251,22 +251,110 @@ h2 {
 	width: 64%;
 }
 
-.tabs-header {
-	display: flex;
-}
-
-.tabs-header li {
+.tabs label {
 	min-width: 20%;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	margin-right: -3px;
+	border: 1px solid #e1dfdf;
+	border-right: none;
+	background-color: #fcfafa;
 	font-size: 19px;
+	line-height: 32px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-#tab2, #tab3 {
+.tabs label:last-of-type {
+	border-right: 1px solid #e1dfdf;
+}
+
+.tabs label:hover {
+	cursor: pointer;
+}
+
+.tabs>input:checked+label {
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	color: #38afe5;
+}
+
+.tabs>input {
 	display: none;
+	position: absolute;
+}
+
+.tabs-items {
+	border: 1px solid #e1dfdf;
+}
+
+.tab-item {
+	display: none;
+	flex-direction: column;
+	padding: 40px 15px 20px 20px;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#tab1-header:checked~.tabs-items #tab1,
+#tab2-header:checked~.tabs-items #tab2,
+#tab3-header:checked~.tabs-items #tab3 {
+	display: flex;
+}
+
+.tab-paragraph {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.tab-paragraph img {
+	height: 105px;
+	width: 30%;
+}
+
+.tab-description {
+	width: 60%;
+	font-family: Arial, sans-serif;
+}
+
+.tab-description h4 {
+	margin-bottom: 25px;
+	color: #263555;
+	font-size: 15px;
+	text-transform: none;
+}
+
+.tab-description p {
+	color: #4e5050;
+	font-size: 10px; 
+}
+
+.tab-btn-wrapper {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px 15px;
+}
+
+.tab-btn-wrapper a {
+	padding: 0 12px;
+	line-height: 20px;
+	border: 1px solid #c6c1c1;
+	border-radius: 5px;
+	background-color: #faf6fa;
 }
 
 .newsletter {
 	width: 32%;
 }
-
