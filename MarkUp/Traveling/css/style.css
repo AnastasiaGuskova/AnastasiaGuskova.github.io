@@ -632,7 +632,7 @@ footer p {
 }
 
 .right-sidebar select {
-	width: 210px;
+	width: 95%;
 	display: block;
 	margin-bottom: 25px;
 	padding: 3px 0 5px 10px;
