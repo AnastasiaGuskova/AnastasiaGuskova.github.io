@@ -48,10 +48,12 @@ h2 {
 	font-weight: 400;
 }
 
+input, select, option {
+	outline: none;
+}
+
 .btn {
 	position: relative;
-	bottom: -33px;
-	right: -52%;
 	padding: 6px 12px;
 	border-radius: 5px;
 	background-color: #faf6fb;
@@ -255,6 +257,11 @@ h2 {
 	text-align: justify;
 }
 
+.destination-description .btn {
+	bottom: -33px;
+	right: -52%;
+}
+
 /* MAIN CONTENT */
 
 #main-content {
@@ -363,8 +370,6 @@ h2 {
 }
 
 .tab-btn-wrapper .btn {
-	right: 0;
-	bottom: 0;
 	border: 1px solid #c6c1c1;
 }
 
@@ -539,6 +544,119 @@ footer p {
 
 #gallery img:nth-child(n+8) {
 	display: none;
+}
+
+/* TOURS SPECIALS */
+#tours-specials {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tours {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.tours .tours-item {
+	height: 160px;
+	width: 280px;
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tours .tours-item img {
+	height: 115px;
+	width: 50%;
+}
+
+.tours .tours-item img {
+	width: 45%;
+}
+
+.tour-description {
+	font-family: Arial, sans-serif;
+}
+
+.tour-description h5 {
+	color: #263555;
+	font-size: 12px;
+}
+
+.tour-description p {
+	margin-top: 15px;
+	color: #4e5050;
+	font-size: 10px;
+}
+
+.tour-description p.tour-price {
+	margin-top: 0;
+	color: #38afe5;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.tour-description .btn {
+	right: -2px;
+	bottom: -33px;
+	border: 1px solid #c6c1c1;
+}
+
+/* RIGHT SIDEBAR */
+
+.right-sidebar {
+	width: 24%;
+}
+
+.right-sidebar h2 {
+	margin-bottom: 45px;
+}
+
+.right-sidebar p,
+.right-sidebar label,
+.right-sidebar select {
+	font: 10px Arial, sans-serif;
+}
+
+.right-sidebar p {
+	color: #38afe5;
+	line-height: 20px;
+}
+
+.right-sidebar label {
+	display: block;
+	margin-bottom: 10px;
+	color: #4e5050;
+}
+
+.right-sidebar select {
+	width: 210px;
+	display: block;
+	margin-bottom: 25px;
+	padding: 3px 0 5px 10px;
+	background-color: #fcfafa;
+	color: #868f8f;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../img/select-arrow.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.right-sidebar option {
+	background-color: #e3e2e2;
+	color: #fff;
+}
+
+.right-sidebar .btn {
+	top: 35px;
+	border: 1px solid #c6c1c1;
+}
+
+.browse-form {
+	padding-bottom: 55px;
 }
 
 /* MEDIA */
