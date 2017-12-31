@@ -1,0 +1,26 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* GLOBAL */
+
+.wrapper {
+	width: 280px;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+	background-image: url(../images/header-bg.jpg);
+}
