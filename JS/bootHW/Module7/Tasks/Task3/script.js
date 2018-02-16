@@ -29,27 +29,27 @@ users[2] = {
 
 function createUserCard(user) {
 	const userCard = 
-	`<div class="user-container">
-		<div class="user-photo" style="background-image: url(${user.img});">
+	`<div class="user-item">
+		<div class="user-container">
+			<div class="user-photo" style="background-image: url(${user.img});">
+			</div>
+			<div class="user-data">
+				<p class="user-name">${user.name}</p>
+				<p class="user-info">${user.age} : ${user.location}</p>
+				<ul class="user-counter">
+					<li class="user-strawberry">${user.strawberries}</li>
+					<li class="user-lemon">${user.lemons}</li>
+					<li><a class="user-link" href="#"></a></li>
+				</ul>
+			</user
 		</div>
-		<div class="user-data">
-			<p class="user-name">${user.name}</p>
-			<p class="user-info">${user.age} : ${user.location}</p>
-			<ul class="user-counter">
-				<li class="user-strawberry">${user.strawberries}</li>
-				<li class="user-lemon">${user.lemons}</li>
-				<li><a class="user-link" href="#"></a></li>
-			</ul>
-		</user
 	</div>`;
 	return userCard;
 }
 
 for (let i = 0; i < users.length; i++) {
-	const user = document.createElement('div');
-	user.classList.add('user-item');
-	user.innerHTML = createUserCard(users[i]);
-	document.querySelector('.wrapper').append(user);
+	document.querySelector('.wrapper').
+		insertAdjacentHTML('beforeend', createUserCard(users[i]));
 }
 
 

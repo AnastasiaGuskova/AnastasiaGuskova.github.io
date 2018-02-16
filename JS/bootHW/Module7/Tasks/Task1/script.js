@@ -16,7 +16,7 @@ function createUserCard() {
 	userContainer.append(userData);
 
 	const userName = document.createElement('p');
-	userName.textContent = 'Markhor Schraubenziege';
+	userName.textContent = 'Markhor Capra Falconeri';
 	userName.classList.add('user-name');
 	userData.append(userName);
 

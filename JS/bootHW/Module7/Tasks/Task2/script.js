@@ -5,7 +5,7 @@ function createUserCard() {
 			<div class="user-photo" style="background-image: url(images/photo1.jpg);">
 			</div>
 			<div class="user-data">
-				<p class="user-name">Markhor Schraubenziege</p>
+				<p class="user-name">Markhor Capra Falconeri</p>
 				<p class="user-info">7 : Zoo, Augsburg</p>
 				<ul class="user-counter">
 					<li class="user-strawberry">19</li>
@@ -18,4 +18,5 @@ function createUserCard() {
 	return userCard;
 }
 
-document.querySelector('.wrapper').innerHTML = createUserCard();
+document.querySelector('.wrapper').
+	insertAdjacentHTML('beforeend', createUserCard());
