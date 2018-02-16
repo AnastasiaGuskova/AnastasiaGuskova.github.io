@@ -1,0 +1,25 @@
+.clock {
+	margin-top: 250px;
+	border: 5px solid #000000;
+	border-radius: 10px;
+}
+
+.clock p {
+	font-size: 72px;
+}
+
+#start, #clear, #pause {
+	width: 25%;
+	margin-top: 50px;
+	border-radius: 10px;
+	font-size: 36px;
+}
+
+#clear {
+	margin-right: 150px;
+	float: right;
+}
+
+#start, #pause {
+	margin-left: 150px;
+}

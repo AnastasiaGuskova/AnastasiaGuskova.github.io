@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Titillium Web', Arial, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.user-item {
+	height: 460px;
+	width: 250px;
+	margin-bottom: 50px;
+	padding: 25px 15px;
+	background-color: #eee;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 10px 3px #ccc;
+	box-shadow: 0px 0px 10px 3px #ccc;
+}
+
+.user-container {
+	height: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(119,119,119,0.35);
+	box-shadow: 0px 0px 10px 0px rgba(119,119,119,0.35);
+}
+
+.user-photo {
+	height: 300px;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.user-data {
+	height: 160px;
+	box-sizing: border-box;
+	padding: 35px 0;
+	text-align: center;
+}
+
+.user-name {
+	font-size: 18px;
+}
+
+.user-info {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.user-strawberry:before {
+	content: '';
+	height: 30px;
+	width: 22px;
+	float: left;
+	margin: -5px 5px 0 0;
+	background: url(images/strawberry.png) no-repeat;
+}
+
+.user-lemon:before {
+	content: '';
+	height: 23px;
+	width: 26px;
+	float: left;
+	margin-right: 5px;
+	background: url(images/lemon.png) no-repeat;
+}
+
+.user-counter {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	font-style: italic;
+}
+
+.user-link {
+	height: 23px;
+	width: 29px;
+	display: block;
+	background: url(images/point-hand.png) no-repeat;
+}
