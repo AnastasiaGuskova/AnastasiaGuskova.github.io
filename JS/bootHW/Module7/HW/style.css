@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 200px auto;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.key {
+	height: 50px;
+	width: 50px;
+	margin: 2px;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
