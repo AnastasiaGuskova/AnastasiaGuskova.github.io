@@ -26,5 +26,32 @@ const activeBtn = {
   node: null
 };
 
+function removeButtonHighLight() {
+	if (activeBtn.node !== null && 
+		activeBtn.node.classList.contains('keyboard__btn--active')) {
+			activeBtn.node.classList.remove('keyboard__btn--active');
+	}
+}
+
+function onClickButton(event) {
+	let target = event.target;
+
+	if (target.tagName === 'BUTTON') {
+		removeButtonHighLight();
+		target.classList.add('keyboard__btn--active');
+		x.textContent = event.clientX;
+		y.textContent = event.clientY;
+		activeBtn.node = target;
+	}
+}
+
+function onClickVoid(event) {
+	if(event.target.tagName !== 'BUTTON') {
+		removeButtonHighLight();
+	}
+}
+
+keyboard.addEventListener('click', onClickButton);
+document.addEventListener('click', onClickVoid);
 
 
