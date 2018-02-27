@@ -17,7 +17,7 @@
   - ссылку на элемент-родитель в который будем рендерить результат: parent
 */
 
-const rows = {
+const letters = {
   top: ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"],
   middle: ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'"],
   bottom: ["z", "x", "c", "v", "b", "n", "m", ",", ".", "/"]
@@ -26,7 +26,7 @@ const rows = {
 const html = document.querySelector("#keyboard-tpl").textContent.trim();
 const parent = document.querySelector("#keyboard-container");
 
-renderKeyboard(html, rows, parent);
+renderKeyboard(html, letters, parent);
 
 function renderKeyboard(tpl, rows, parent) {
   const compiled = _.template(tpl);

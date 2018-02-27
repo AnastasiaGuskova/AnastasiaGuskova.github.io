@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>module-09-hw</title>
-  
-  
-  
-  
-  
+    <meta charset="UTF-8">
+    <title>module-09-hw</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+	<div class="slideThree">
+        <input type="checkbox" value="None" id="slideThree" name="check" checked />
+        <label for="slideThree"></label>
+        <span>Sound</span>
+    </div>
+	<script type="tpl/lodash" id="keyboard-tpl">
+    	<% for (key in data) { %>
+			<div class="keyboard__row">
+				<% data[key].forEach(function(item, i, arr) {
+					let ind; 
+					if (i < arr.length/2) {
+						ind = i;
+					}
+					else {
+						ind = Math.floor(arr.length/2) - (i - smth.length) -1; 
+					} %>
+					<button class="keyboard__btn" data-note="<%-smth[ind].note%>"><%-item%></button>
+				<% }); %>
+			</div>
+		<% } %>
+    </script>
+    <div id="keyboard-container" class="keyboard"></div>
+    <script type="tpl/lodash" id="sound-tpl">
+		<% soundSrc.forEach(item => { %>
+			<audio class="sonidos" src="<%- item.src%>"
+				data-note="<%- item.note%>">
+			</audio>
+		<% }); %>
+    </script>
+    <div id="sound-src"></div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
