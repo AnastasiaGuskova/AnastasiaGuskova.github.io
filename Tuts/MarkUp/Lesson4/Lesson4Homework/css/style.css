@@ -1,0 +1,173 @@
+body {
+	background: url('../img/background.jpg') repeat-x;
+	background-color: #0c739f;
+	font-size: 16px;
+}
+
+/* Global */
+.main {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 4px 0 rgba(0,0,0,0.75);
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/* Header */
+header {
+	position: relative;
+	color: #128aa7;
+}
+
+.header-top {
+	height: 175px;
+	
+}
+
+.logo {
+	margin: 11px 0 0 28px;
+}
+
+.logo-text {
+	position: absolute;
+	top: 110px;
+	left: 70px;
+}
+
+.contacts {
+	float: right;
+	margin: 10px 30px 0 0;
+}
+
+.countries {
+	margin: -75px 30px 10px 0;
+}
+
+.countries ul li {
+	float: right;
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.countries ul li a {
+	font-size: 13px;
+	color: #128aa7;
+}
+
+.long-name {
+	margin: 0 0 0 3px;
+}
+
+.header-photo {
+	display: block;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+.menu {
+	height: 30px;
+	padding-left: 13px;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 2px solid #000000;
+	box-shadow: 0px 3px 4px 0 rgba(0,0,0,0.75);
+	background-color: #323232;
+	text-align: justify;
+}
+
+.menu ul li {
+	float: left;
+	position: relative;
+	display: inline;
+	padding: 3px 25px;
+	text-align: center;
+}
+
+.menu ul li a {
+	color: #ffffff;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+.menu-arrow {
+	font-size: 10px;
+}
+
+.submenu {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 28px;
+	left: 15px;
+	padding-top: 4px;
+}
+
+.submenu li {
+	display: block;
+	background-color: #323232;
+}
+
+.submenu li a {
+	display: block;
+}
+
+.menu ul li:hover> .submenu {
+    display: block;
+    border-top: #000000;
+    box-shadow: 0px 4px 5px 0 #000000;
+}
+
+/* Content */
+.content {
+	overflow: hidden;
+}
+
+.sidebar {
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	padding-left: 15px;
+	border-right: 1px solid #c7cacf;
+	border-left: 1px solid #c7cacf;
+	background-color: #edeef0;
+	color: #424c43;
+}
+
+.sidebar h1 {
+	padding: 5px 15px 0 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.sidebar p {
+	padding-top: 3px;
+}
+
+.left-sidebar {
+	width: 21%;
+	float: left;
+}
+
+.right-sidebar {
+	width: 21%;
+	float: right;
+	padding-left: 15px;
+	background-color: #edeef0;
+}
+
+.main-content {
+	width: 54%;	
+	margin: 0 auto;
+}
+
+/* Footer */
+footer p {
+	margin: 8px 0;
+	color: #ffffff;
+	text-align: center;
+}
