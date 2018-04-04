@@ -4,8 +4,15 @@ body {
 }
 
 header {
-    background: #03a9f4;
     text-align: center;
+}
+
+.active {
+    background: #03a9f4;
+}
+
+.non-active {
+	background: green;
 }
 
 .logo {
