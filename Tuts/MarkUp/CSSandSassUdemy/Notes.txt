@@ -1,0 +1,15 @@
+### Tips
+
+** ! ** Использование нескольких бэгранудов на одном элементе. 
+
+### clip-path
+
+Circle: circle(radius at x-axis y-axis)
+Ellipse: ellipse(x-rad y-rad at x-axis y-axis)
+Polygon: polygon(x-axis y-axis, x-axis y-axis, ... )
+Inset: inset(top right bottom left round top-radius right-radius bottom-radius left-radius)
+
+
+### css-animation
+
+** ! ** backface-visibility: hidden против глюка тряски при анимации

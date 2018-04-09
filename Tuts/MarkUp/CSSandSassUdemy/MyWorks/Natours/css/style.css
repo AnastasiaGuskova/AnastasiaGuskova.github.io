@@ -1,0 +1,166 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 30px;
+	font-family: "Lato", sans-serif;
+	color: #777;
+}
+
+.btn,
+.btn:visited {
+	display: inline-block;
+	position: relative;
+	padding: 13px 35px;
+	border-radius: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #777;
+}
+
+.btn-white::after {
+	background-color: #fff;
+}
+
+/* Animation */
+
+@keyframes moveInLeft {
+	0% {
+    	opacity: 0;
+    	transform: translateX(-100px); 
+    }
+  	80% {
+    	transform: translateX(10px); 
+    }
+  	100% {
+    	opacity: 1;
+    	transform: translate(0); 
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.header {
+	height: 95vh;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);	
+	position: relative;
+	background:
+		linear-gradient(to right bottom, 
+			rgba(126, 213, 111, 0.8), 
+			rgba(40, 180, 133, 0.8)), 
+		url(../img/hero.jpg) no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.hero {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hero-title {
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 90px;
+	letter-spacing: 35px;
+	animation: moveInLeft 2s ease-out;
+	backface-visibility: hidden;
+}
+
+.hero-text {
+	margin-left: -15px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 17.4px;
+	animation: moveInRight 2s ease-out;
+	backface-visibility: hidden;
+}
+
+.btn-hero {
+	margin-top: 60px;
+}
+
+
