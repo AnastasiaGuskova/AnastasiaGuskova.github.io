@@ -1,0 +1,44 @@
+.heading-primary {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+	&--title {
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+		line-height: 9rem;
+	}
+
+	&--text {
+		margin-left: -1.5rem;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.75rem;
+		line-height: 3rem;
+	}
+}
+
+.heading-secondary {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+	font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    &:hover {
+    	text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+}
