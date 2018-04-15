@@ -1,0 +1,26 @@
+.footer {
+	padding: 10rem 0;
+	background-color: $color-grey-dark-3;
+	font-size: 1.4rem;
+    color: $color-grey-light-1;
+
+    &__logo-box {
+    	text-align: center;
+    }
+
+    &__logo {
+    	height: auto;
+    	width: 15rem;
+    }
+
+    &__col {
+    	padding-top: 2rem;
+    	display: inline-block;
+    	border-top: 1px solid $color-grey-dark;
+    }
+
+    &__copyright {
+    	width: 97%;
+    	float: right;
+    }
+}

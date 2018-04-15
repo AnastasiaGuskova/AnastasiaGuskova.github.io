@@ -1,0 +1,30 @@
+.nav-horizon {
+
+
+	&__list {
+		list-style: none;
+	}
+
+	&__list-item {
+		display: inline-block;
+		margin: 0 0.9rem;
+	}
+
+	&__link {
+		padding: 0 0.5rem;
+		display: inline-block;
+		background-color: inherit;
+		color: inherit;
+		text-decoration: none;
+		text-transform: uppercase;
+		transform: skewX(-12deg);
+		transition: all 0.2s;
+
+		&:hover,
+		&:active {
+			color: $color-primary;
+            box-shadow: 0 0.6rem 2.8rem rgba($color-black, .6);
+            transform: translateY(-0.2rem) skewX(-12deg) scale(1.3);
+		}
+	}
+}
