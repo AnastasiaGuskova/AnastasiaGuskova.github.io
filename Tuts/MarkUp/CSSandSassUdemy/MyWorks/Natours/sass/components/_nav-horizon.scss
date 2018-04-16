@@ -1,5 +1,7 @@
 .nav-horizon {
-
+	@include respond(tab-port) {
+		text-align: center;
+	}
 
 	&__list {
 		list-style: none;
@@ -8,6 +10,10 @@
 	&__list-item {
 		display: inline-block;
 		margin: 0 0.9rem;
+
+		@include respond(tab-port) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__link {

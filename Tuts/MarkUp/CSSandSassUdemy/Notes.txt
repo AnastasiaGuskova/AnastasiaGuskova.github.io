@@ -13,3 +13,15 @@ Inset: inset(top right bottom left round top-radius right-radius bottom-radius l
 ### css-animation
 
 ** ! ** backface-visibility: hidden против глюка тряски при анимации
+
+### rem
+
+** ! ** ставим font-size для html 62.5% (16px*0.625 = 10px). Все остальное пишем в remах (т.е. 1rem = 10px).
+
+### 7-1 CSS Architecture
+
+abstracts/_functions.scss _mixins.scss _variables.scss
+base/_animations.scss _base.scss _typography.scss _utilities.scss
+components/_button.scss _popup.scss...
+layout/_footer.scss _grid.scss _header.scss _navigation.scss...
+pages/_home.scss...
