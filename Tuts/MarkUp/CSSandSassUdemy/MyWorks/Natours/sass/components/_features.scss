@@ -13,10 +13,14 @@
 	&__icon {
 		display: inline-block;
 		margin-bottom: 0.5rem;
-		background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-	    -webkit-background-clip: text;
-	    color: transparent;
+		color: $color-primary;
 		font-size: 6rem;
+
+		@supports (-webkit-background-clip: text) {
+			background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+		    -webkit-background-clip: text;
+		    color: transparent;
+		}
 
 		@include respond(tab-port) {
             margin-bottom: 0;

@@ -37,13 +37,17 @@ body {
 
 .heading-secondary {
 	display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary;
 	font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: .2rem;
     text-transform: uppercase;
+
+    @supports (-webkit-background-clip: text) {
+    	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+	    -webkit-background-clip: text;
+	    color: transparent;
+    }
 
     @include respond(tab-port) {
     	font-size: 3rem;
